@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignInFragment" >
+
+    <EditText
+        android:id="@+id/importRegitId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="id"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/importRegitPW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="password(12자 이상,특수기호 포함)"
+        android:inputType="textPassword"
+        android:longClickable="false" />
+
+    <EditText
+        android:id="@+id/checkImportRegitPW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="checkPassword"
+        android:inputType="textPassword"
+        android:longClickable="false" />
+
+    <EditText
+        android:id="@+id/importName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="이름"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/importLocate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="주소"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/importPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="전화번호"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/agreePaper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="개인정보사용 동의약관" />
+
+    <RadioButton
+        android:id="@+id/usingAgreeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="개인정보 사용을 동의합니다" />
+
+    <Button
+        android:id="@+id/registUserButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입" />
+
+</LinearLayout>

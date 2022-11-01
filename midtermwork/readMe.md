@@ -1,17 +1,17 @@
 실행환경 : android 12.0 google play / arm64
 
 -javaFile-
-MainActivity.java
-    onCreate()
-        -signInFragment 생성
-        -ItemShowFragment 생성
-        -navigationbar 동작 구현
-            -signInFragment,ItemShowFragment간의 화면전환
-        -preference에 저장되어있는 로그인 정보 유무 확인 후 첫화면 지정 및 개인정보 반영
-            -있다면 : 첫화면 itemlist화면, 회원정보 클릭시 개인정보 화면
-            -없다면 : 첫화면 login화면, 회원정보 클릭 시 login화면으로 이동
-    onFragmentChanged(int index)
-        프래그먼트 전환 매서드
+###MainActivity.java
+* onCreate()    
+    - signInFragment 생성
+    - ItemShowFragment 생성
+    - navigationbar 동작 구현
+        + signInFragment,ItemShowFragment간의 화면전환
+    - preference에 저장되어있는 로그인 정보 유무 확인 후 첫화면 지정 및 개인정보 반영
+        - 있다면 : 첫화면 itemlist화면, 회원정보 클릭시 개인정보 화면
+        - 없다면 : 첫화면 login화면, 회원정보 클릭 시 login화면으로 이동
+* onFragmentChanged(int index)
+    프래그먼트 전환 매서드
 
 Item.java
     -ItemShowFragment에 보여줄 것들 형식 지정
